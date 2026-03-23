@@ -1,0 +1,377 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main-container {
+  font-family: "poppins";
+}
+/* nav-flexbox */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+}
+.navlink {
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+}
+.navlink a {
+  text-decoration: none;
+  color: black;
+}
+.btn {
+  padding: 0.5rem 1rem;
+  background-color: green;
+  border: none;
+  border-radius: 0.4rem;
+  color: white;
+}
+.size-1 {
+  display: block;
+  width: 1rem;
+  height: 1rem;
+}
+.btn-div {
+  display: flex;
+  gap: 1rem;
+}
+.btn1 {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 0.7rem 1rem;
+  border-radius: 0.3rem;
+}
+.btn2 {
+  background-color: rgb(248, 245, 245);
+  color: black;
+  border: none;
+  padding: 0.7rem 1rem;
+  border-radius: 0.3rem;
+}
+.btn1:hover {
+  background-color: black;
+}
+.btn:hover {
+  background-color: black;
+}
+.herosection {
+  width: 100%;
+  display: flex;
+  padding: 1rem 3rem;
+  gap: 2rem;
+}
+.content-section {
+  flex: 1;
+  margin-top: 1rem;
+}
+.content-section h4,
+h6 {
+  color: rgb(97, 25, 230);
+}
+.content-section h1 {
+  font-size: 65px;
+  color: #4a4343;
+  line-height: 4.5rem;
+}
+.img-section {
+  flex: 1;
+}
+span {
+  color: green;
+}
+.text {
+  text-align: center;
+  margin-block: 1rem;
+}
+.text h1 {
+  color: green;
+}
+.feature-section {
+  display: flex;
+  gap: 2rem;
+  padding: 1rem;
+}
+.subdiv {
+  display: flex;
+  background-color: #f5f5dc;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+}
+.img {
+  width: 100px;
+  height: 100px;
+  margin-inline: auto;
+  padding: 0;
+}
+h2 {
+  color: green;
+}
+h3 {
+  color: darkblue;
+}
+p {
+  color: rgb(31, 30, 30);
+}
+.destination-section {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.subdiv1 {
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #faf9f6;
+  text-align: center;
+  padding: 0;
+  margin-bottom: 1rem;
+  min-height: 40dvh;
+}
+.img-size {
+  width: 25dvw;
+  height: 50dvh;
+  border-radius: 1rem;
+  margin: 0;
+  padding: 0;
+}
+.booking-section {
+  display: flex;
+  padding: 1rem;
+  gap: 2rem;
+}
+header {
+  text-align: start;
+  margin-block: 1rem;
+}
+.booking-instruction {
+  padding-inline: 3rem;
+}
+.subdiv3 {
+  display: flex;
+  gap: 2rem;
+}
+.testimonials-section h1 {
+  color: green;
+}
+.testimonials-section {
+  display: flex;
+  padding-inline: 2rem;
+  gap: 2rem;
+  justify-content: center;
+}
+.form-section {
+  padding: 2rem;
+  background-color: #fff5ee;
+  border-radius: 1rem;
+  margin-inline: 6rem;
+}
+.form-section h2{
+  text-align: center;
+}
+form{
+  display: grid;
+  margin-block:1rem;
+  gap: 1rem;
+}
+input,textarea{
+  padding: 0.8rem;
+  padding-inline: 1rem;
+}
+.grid-container h4{
+  color: blue;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, 200px);
+  grid-auto-rows: 200px;
+  padding: 3rem;
+  margin-inline: 2rem;
+  justify-content: center;
+}
+.font-size {
+  font-size: 11px;
+}
+/* for mobile screen */
+@media (max-width: 768px) {
+  .main-container {
+    width: 100dvw;
+    padding: 0.6rem;
+  }
+  .navbar {
+    width: 100dvw;
+    padding: 1rem 0.6rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navlink {
+    display: none;
+  }
+  .nav-btn{
+    display: none;
+  }
+  .menu {
+    display: inline-block;
+  }
+  .herosection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .feature-section {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-auto-rows: auto;
+    gap: 1rem;
+    justify-content: center;
+    padding: 1rem;
+  }
+  .subdiv {
+    max-width: 50dvw;
+  }
+
+  .img {
+    width: 50px;
+    height: 50px;
+    margin-inline: auto;
+    padding: 0;
+  }
+  .destination-section {
+    display: grid;
+    grid-auto-flow: row;
+    gap: 2rem;
+    justify-content: center;
+  }
+  .img-size {
+    width: 50dvw;
+    height: 50dvh;
+    border-radius: 1rem;
+    margin: 0;
+    padding: 0;
+  }
+  .booking-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100dvw;
+    gap: 3rem;
+  }
+  .img2{
+    width: 80dvw;
+    margin-inline: auto;
+  }
+  .testimonials-section {
+    display: grid;
+    grid-auto-flow: row;
+    gap: 2rem;
+    justify-content: center;
+  }
+  .logo {
+    width: 100dvw;
+  }
+  .form-section {
+    display: grid;
+    justify-content: center;
+    padding: 1rem;
+  }
+  .btn{
+    width: 80px;
+  }
+  input,textarea{
+    width: 40dvw;
+  }
+  .grid-container {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(2, auto);
+    grid-auto-rows: auto;
+    justify-content: center;
+  }
+}
+/* for Tablet screen */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .main-container {
+    width: 100dvw;
+  }
+  .herosection{
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-btn{
+    display: none;
+  }
+  .feature-section {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-auto-rows: auto;
+    gap: 2rem;
+    justify-content: center;
+    padding-inline: 1rem;
+    padding-block: 4rem;
+  }
+  .destination-section {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-auto-rows: auto;
+    padding: 2rem;
+    gap: 2rem;
+    justify-content: center;
+  }
+  .booking-section{
+    display: flex;
+    flex-direction: column;
+  }
+  .logo {
+    width: 100dvw;
+  }
+  .grid-container {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(3, auto);
+    grid-auto-rows: auto;
+    justify-content: center;
+  }
+}
+/* for laptop screen */
+@media (min-width: 1024px) {
+  .main-container {
+    width: 100dvw;
+  }
+  .herosection {
+    display: flex;
+    padding: 2rem;
+  }
+  .content-section {
+    flex: 1;
+  }
+  .img-section {
+    flex: 1;
+  }
+  .feature-section {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    padding: 1rem;
+  }
+  .booking-section {
+    display: flex;
+    justify-content: center;
+    width: 100dvw;
+  }
+  .logo {
+    width: 100dvw;
+    justify-content: center;
+  }
+  .form-section {
+    margin-inline: 5 rem;
+  }
+}
